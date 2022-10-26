@@ -1,19 +1,19 @@
 * {
   line-height: 1.5;
-  font-family: "Montserrat";
+  font-family: 'Open Sans';
   list-style: none;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
+img {
+  width: 300px;
+}
+
 iframe {
   width: 75%;
   height: 75%;
-}
-
-img {
-  width: 300px;
 }
 
 
@@ -28,6 +28,22 @@ img {
   background: white;
   text-align: center;
 }
+
+.index-ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.index-ul li a{
+  color: wheat;
+}
+
+.index-ul li a:hover {
+  color: red;
+}
+
 
 .index-main__section {
   text-align: left;
