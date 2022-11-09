@@ -1,5 +1,3 @@
-
-
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap'); */
 
 
@@ -7,11 +5,10 @@
 
 
 
-
-@import url(/css/normalize.css);
-
-
-@import url(../css/index.css);
+@import url(./normalize.css);
 
 
-@import url(/css/register-form.css);
+@import url(./css/index.css);
+
+
+@import url(./register-form.css);
