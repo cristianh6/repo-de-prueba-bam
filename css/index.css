@@ -41,7 +41,7 @@ iframe {
 }
 
 .index-ul li a:hover {
-
+  color: red;
 }
 
 
@@ -105,3 +105,4 @@ footer {
 .red {
   color: red;
 }
+

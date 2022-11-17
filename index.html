@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" type="text/css">
 
@@ -35,7 +35,7 @@
           
         <ul class="index-ul">
           <li>
-            <a href="">
+            <a id="hamb-menu" class="d-none" href="">
               <i class="fa-sharp fa-solid fa-bars"></i>
             </a>
           </li>
@@ -53,17 +53,15 @@
               <i class="fa-solid fa-user"></i>
             </a>
           </li>
-          <li>
-            <button type="button" class="btn btn-primary" id="button_list">
-              <span>Tocar</span>
-            </button>
-          </li>
         </ul>
       </nav>
       
     </header>
 
     <main>
+      <button type="button" class="btn btn-primary" id="button_list">
+        <span>Tocar</span>
+      </button>
       <div id="carouselExampleSlidesOnly" class="carousel carousel slide d-flex w-50 m-auto" data-bs-ride="carousel">
         <div class="carousel-inner d-flex w-100">
           <div class="carousel-item active">

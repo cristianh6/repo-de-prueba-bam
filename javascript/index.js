@@ -1,4 +1,4 @@
- console.log("success");
+console.log("success");
 /*
 let nombre = "Cristian";
 let apellido = "Casalaspro";
@@ -106,7 +106,6 @@ if (!entryNumber) {
   document.write("El valor ingresado no es un número");
 }   */
 
-
 /* Crear una función que reciba el parámetros nombre, apellido y
 serie favorita y que devuelva un saludo:
 ● Un nombre
@@ -117,13 +116,11 @@ Hola, nombre + apellido, tu serie favorita es serieFavorita
 
 Invocar la función con los parámetros requeridos. */
 
-
 /* let saludar = function(nombre, apellido, serieFavorita) {
   alert(nombre + " " + apellido + " " + "tu serie favorita es " + serieFavorita) 
 }
 
 console.log(saludar("Cristian", "Casalaspro", "Sherlock Holmes")) */
-
 
 /* let nombre = function(nombre) {
   return nombre.length;
@@ -134,22 +131,119 @@ let longitudNombre = nombre("Cristian");
 
 console.log(longitudNombre) */
 
+// CLASE 10 //
 
-
-/* let etiqueta = document.getElementsByClassName("index-ul");
-
-etiqueta.style.backgroundColor = "red" */
-
-
+/* let list = document.querySelector(".index-ul");
 let button = document.querySelector("#button_list");
 
 
+let hambMenu = document.querySelector("#hamb-menu");
 
-button.addEventListener("click", (event) => {
-  if(event.target) {
-    button.innerHTML = "<span>HOLA</span>"
+let inicio = "Inicio";
+let sobreMi = "Sobre mí";
+let contacto = "Contacto";
+
+button.addEventListener('click', (e) => {
+  let ul = document.createElement("ul");
+  if(e.target) {
+    list.classList.toggle("d-block")
+    ul.style.position = "absolute"; 
+    ul.style.backgroundColor = "grey";
+
+    ul.innerHTML = `
+    <li>${inicio}</li>
+    <li>${sobreMi}</li>
+    <li>${contacto}</li>
+    `
+    
+
+    ul.style.display = "flex";
+    ul.style.flexDirection = "column"
+    hambMenu.appendChild(ul);
+    hambMenu.classList.toggle("d-none")
   }
-  
 })
+ */
+
+//let i = 0; // Inicialización de la variable contador
+// Condición: Mientras la variable contador sea menor de 5
+/* while (i < 10) {
+console.log("Valor de i: ", i);
+i = i + 1; // Incrementamos el valor de i
+} */
+
+/* let i = 100;
+
+while (i > 0) {
+  console.log("Sólo quedan " + i + " pasos por caminar");
+  i = i - 1; 
+  if(i == 0) {
+    console.log("Llegaste!");
+  }
+} */
+
+/* for (let i = 0; i < 10; i++) {
+  console.log("Número " + i);
+  } */
+
+/* for (let i = 0; i <= 10; i++) {
+    alert(i);
+    }  */
+
+/* let ingresarNumero = parseInt(prompt("Ingresar Numero"));
+
+    for (let i = 1; i <= 10; i++) {
+      let resultado = ingresarNumero * i ;
+      alert(ingresarNumero +" X "+ i +" = "+ resultado);
+    } */
+
+/* let numeros = [
+      [2, 4],
+      [5, 10]
+    ];  
+
+    let resultadoMultli;
+    
+
+    let multiplicarYsumarArrays = function() {
+      let resultadoArrayUno = numeros[0][0]*numeros[0][1];
+      let resultadoArrayDos = numeros[1][0]*numeros[1][1];
+      resultadoMultli = resultadoArrayUno + resultadoArrayDos;
+      return resultadoMultli;
+    }
+    
+    console.log(multiplicarYsumarArrays()) */
+
+/* let objetos = ["Varita", "Libro", "Lechuza", "Caldero"];
+
+objetos.forEach(function (objeto) {
+  console.log(objeto);
+});
+ */
+
+/* let objetos = ["Varita", "Libro", "Lechuza", "Caldero"];
 
 
+objetos.map(objeto => {
+  let nuevaLista = [];
+  nuevaLista.push("Objeto: " + objeto)
+  console.log(nuevaLista);
+}); */
+
+
+/* const numeros = [1, 2, 3, 4, 5];
+//La función parámetro generalmente es una función flecha sin cuerpo.
+
+const encontrado = numeros.find(elemento => elemento > 3);
+
+console.log(encontrado) */
+
+
+let numeros = [2, 5, 6, 18, 201];
+
+
+let resultado = numeros.filter(n => {
+  return n > 5;
+});
+
+console.log(resultado);
